@@ -1,0 +1,45 @@
+{
+    "title": {
+        "media": {
+          "url": "",
+          "caption": "SLOGANS from the past",
+          "credit": "no credit/<a href=''>tm_10001</a>"
+        },
+        "text": {
+          "headline": "Lausanne<br/> DATES",
+          "text": "<p>smth to say about the project</p>"
+        }
+    },
+    "events": [
+      {
+        "media": {
+          "url": "{{ static_url }}/img/examples/houston/family.jpg",
+          "caption": "Slogans screenshot",
+          "credit": "credit<a href='http://www.flickr.com/photos/11447043@N00/418180903/'>Tom Marcello</a><br/><a href='https://www.dartfish.tv/Player?CR=p33203c27287m1190999'>DARTFISH</a>"
+        },
+        "start_date": {
+          "month": "02",
+          "day": "06",
+          "year": "2008"
+        },
+        "text": {
+          "headline": "Slogans",
+          "text": "<p>DECFO SYSREM UN SYSTEM DE DEFAUT,Le conseil d'état Berne Roule Oublie Utilise Lessive Ignore les Salariés,Etre saigné pour enseigner,Gymnase d'Yverdon en (G)rève,Etat endetté Fonctionnaires Ponctionnés Etat regonflé Fonctionnaires oubliés,Pascal tu es un chacal,Aclens se défend,Romanel se rebelle,Oubliés hier, perdants demain!</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/fSrO91XO1Ck",
+          "caption": "",
+          "credit": "<a href=\"http://unidiscmusic.com\">Unidisc Music</a>"
+        },
+        "start_date": {
+          "year": "1978"
+        },
+        "text": {
+          "headline": "First Recording",
+          "text": "At the age of 15 Houston was featured on Michael Zager's song, Life's a Party."
+        }
+      }
+    ]
+}
