@@ -217,7 +217,14 @@
             //var timeline_json = make_the_json(); 
             
             // load the json file
-            const timeline_json= require('./test.json'); 
+            //const timeline_json= require('./test.json'); 
+            
+            const timeline_json = fetch("./data.json")
+                .then(response => {
+	                return response.json();
+            })
+  .then(jsondata => console.log(jsondata));
+            
             window.timeline = new TL.Timeline('timeline-embed', timeline_json);
         </script>
 
