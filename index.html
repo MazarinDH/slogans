@@ -41,6 +41,32 @@
     <script src="node_modules/leaflet-search/dist/leaflet-search.src.js"></script>
     <link rel="stylesheet" href="node_modules/leaflet-search/dist/leaflet-search.src.css  " />
 
+    
+    <!-- TIMELINE JS-->
+    
+     <!-- 1 Load timeline css -->
+        <link title="timeline-styles" rel="stylesheet" 
+              href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+
+        <!-- 2 Load timeline JAVASCRIPT-->
+        <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+        <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+
+        <!-- 3 Create the timeline from JSON -->
+        <script type="text/javascript">
+            // make_the_json() is some javascript function you've written
+            // which creates the appropriate JSON configuration
+            //var timeline_json = make_the_json(); 
+            
+            // load the json file
+            const timeline_json= require('./test.json'); 
+            window.timeline = new TL.Timeline('timeline-embed', timeline_json);
+        </script>
+    
+    
+    
+    
     <!--  Database-->
     <script src="data.js"></script>
 
