@@ -225,9 +225,14 @@
 		return names;
   		// logs [{ name: 'Joker'}, { name: 'Batman' }]
 		}
-            const timeline_json = loadJSON()
+		
+		const timeline_json = loadJSON().then(movies => {
+  		movies; // fetched movies
+		});
+
+           
             
-	    console.log(timeline_json)
+	    
 		
 // 	  // TRY WITH DIRECT JSON 
 // 		const timeline_json = {
