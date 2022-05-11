@@ -218,10 +218,11 @@
             //var timeline_json = make_the_json(); 
             
             // load the json file
-            const timeline_json= require('./test.json'); 
+            //const timeline_json= require('./test.json'); 
             async function loadJSON() {
  		 const response = await fetch('./example.json');
   		const names = await response.json();
+		return names;
   		// logs [{ name: 'Joker'}, { name: 'Batman' }]
 		}
             const timeline_json = loadJSON()
