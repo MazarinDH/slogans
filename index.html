@@ -220,58 +220,58 @@
             // load the json file
           
      
-	fetch('./example.json')
-		.then(response => response.json())
-		.then(console.log(response));
+// 	fetch('./example.json')
+// 		.then(response => response.json())
+// 		.then(console.log(response));
 
 	    
 		
 // 	  // TRY WITH DIRECT JSON 
-// 		const timeline_json = {
-//     "title": {
-//         "media": {
-//           "url": "",
-//           "caption": "SLOGANS from the past",
-//           "credit": "no credit/<a href=''>tm_10001</a>"
-//         },
-//         "text": {
-//           "headline": "Lausanne<br/> DATES",
-//           "text": "<p>smth to say about the project</p>"
-//         }
-//     },
-//     "events": [
-//       {
-//         "media": {
-//           "url": "{{ static_url }}/img/examples/houston/family.jpg",
-//           "caption": "Slogans screenshot",
-//           "credit": "credit<a href='https://www.dartfish.tv/'>"
-//         },
-//         "start_date": {
-//           "month": "02",
-//           "day": "06",
-//           "year": "2008"
-//         },
-//         "text": {
-//           "headline": "Slogans",
-//           "text": "<p>DECFO SYSREM UN SYSTEM DE DEFAUT,Le conseil d'état Berne Roule Oublie Utilise Lessive Ignore les Salariés,Etre saigné pour enseigner,Gymnase d'Yverdon en (G)rève,Etat endetté Fonctionnaires Ponctionnés Etat regonflé Fonctionnaires oubliés,Pascal tu es un chacal,Aclens se défend,Romanel se rebelle,Oubliés hier, perdants demain!</p>"
-//         }
-//       },
-//       {
-//         "media": {
-//           "url": "https://www.dartfish.tv/",
-//           "caption": "",
-//           "credit": "here comes some credits"
-//         },
-//         "start_date": {
-//           "year": "1978"
-//         },
-//         "text": {
-//           "headline": "One event with slogans ",
-//           "text": "Here should be a list o f event"
-//         }
-//       }
-//     ]
-// };
+		const timeline_json = {
+    "title": {
+        "media": {
+          "url": "",
+          "caption": "SLOGANS from the past",
+          "credit": "no credit/<a href=''>tm_10001</a>"
+        },
+        "text": {
+          "headline": "Lausanne<br/> DATES",
+          "text": "<p>smth to say about the project</p>"
+        }
+    },
+    "events": [
+      {
+        "media": {
+          "url": "{{ static_url }}/img/examples/houston/family.jpg",
+          "caption": "Slogans screenshot",
+          "credit": "credit<a href='https://www.dartfish.tv/'>"
+        },
+        "start_date": {
+          "month": "02",
+          "day": "06",
+          "year": "2008"
+        },
+        "text": {
+          "headline": "Slogans",
+          "text": "<p>DECFO SYSREM UN SYSTEM DE DEFAUT,Le conseil d'état Berne Roule Oublie Utilise Lessive Ignore les Salariés,Etre saigné pour enseigner,Gymnase d'Yverdon en (G)rève,Etat endetté Fonctionnaires Ponctionnés Etat regonflé Fonctionnaires oubliés,Pascal tu es un chacal,Aclens se défend,Romanel se rebelle,Oubliés hier, perdants demain!</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.dartfish.tv/",
+          "caption": "",
+          "credit": "here comes some credits"
+        },
+        "start_date": {
+          "year": "1978"
+        },
+        "text": {
+          "headline": "One event with slogans ",
+          "text": "Here should be a list o f event"
+        }
+      }
+    ]
+};
 	    console.log(timeline_json)
             window.timeline = new TL.Timeline('timeline-embed', timeline_json);
         </script>
