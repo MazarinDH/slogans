@@ -219,12 +219,12 @@
             
             // load the json file
             //const timeline_json= require('./test.json'); 
-            
-            const timeline_json = fetch("./example.json")
-                .then(response => {
-	                return response.json()then((data) => {
-                console.log(data);
-                return data; })
+            async function loadJSON() {
+ 		 const response = await fetch('./example.json');
+  		const names = await response.json();
+  		// logs [{ name: 'Joker'}, { name: 'Batman' }]
+		}
+            const timeline_json = loadJSON()
             
 	    console.log(timeline_json)
             window.timeline = new TL.Timeline('timeline-embed', timeline_json);
