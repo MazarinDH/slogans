@@ -218,20 +218,19 @@
             //var timeline_json = make_the_json(); 
             
             // load the json file
-            //const timeline_json= require('./test.json'); 
-            async function loadJSON() {
- 		 const response = await fetch('./example.json');
-  		const names = await response.json();
-		return names;
-  		// logs [{ name: 'Joker'}, { name: 'Batman' }]
-		}
-		
-	     const timeline_json = loadJSON().then(names => {
-  			names; // fetched movies
-		});
+          
+       	ext.get = (url) =>{
+		let myHeaders = new Headers();
+		let options = {
+       			 method: 'GET',
+        		mode: 'cors'
 
-           
-            
+	};
+	return fetch(url).then(response => response.json());
+	};  
+	ext.get('./example.json').then((response) => {
+   	 console.log(response); // or whatever
+	});
 	    
 		
 // 	  // TRY WITH DIRECT JSON 
