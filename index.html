@@ -224,8 +224,9 @@
                 .then(response => {
 	                return response.json();
             		})
- 	    	.then(jsondata => console.log(jsondata));
+ 	    	//.then(jsondata => console.log(jsondata));
             
-            window.timeline = new TL.Timeline('timeline-embed', response);
+	    console.log(timeline_json)
+            window.timeline = new TL.Timeline('timeline-embed', timeline_json);
         </script>
 
