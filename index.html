@@ -222,9 +222,9 @@
             
             const timeline_json = fetch("./example.json")
                 .then(response => {
-	                return response.json();
-            		})
- 	    	.then(jsondata => console.log(jsondata));
+	                return response.json()then((data) => {
+                console.log(data);
+                return data; })
             
 	    console.log(timeline_json)
             window.timeline = new TL.Timeline('timeline-embed', timeline_json);
