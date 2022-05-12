@@ -227,23 +227,52 @@
 	    
 		
 // 	  // TRY WITH DIRECT JSON 
-const timeline_json =  {"title": {"media": {"url": "a title url",
-   "caption": "a title caption ",
-   "credit": "a title credit"},
-  "text": {"headline": "Lausanne",
-   "text": "<p>smth to say about the project</p>"}},
- "events": [{"media": {"url": "gifs/2008-09-19.gif",
-    "caption": "Cérémonie officielle. Discours et spectacles à l'occasion de l’inauguration du métro M2, premier métro automatique de Suisse. Entre douze et quinze mille passagers. Discours de Mortiz Leuenberger, Conseiller fédéral, interrompu par des manifestants.",
-    "credit": "https://www.dartfish.tv/Player?CR=p33203c27287m802509"},
-   "start date": {"month": "09", "day": "19", "year": "2008"},
-   "text": {"headline": "Inauguration du métro M2",
-    "text": "ça coince à la gare... ton salaire"}},
-  {"media": {"url": "gifs/2000-09-25.gif",
-    "caption": "None",
-    "credit": "https://www.dartfish.tv/Player?CR=p33203c27287m1180986"},
-   "start date": {"month": "09", "day": "25", "year": "2000"},
-   "text": {"headline": "None",
-    "text": "Petite Mère, tes enfants ont four une culture de patatesPour une culture alternative\n"}}]}
+const timeline_json = {
+    "title": {
+        "media": {
+          "url": "a title url",
+       "caption": "a title caption ",
+       "credit": "a title credit"
+        },
+        "text": {
+          "headline": "Whitney Houston<br/> 1963 - 2012",
+          "text": "<p>Houston's voice caught the imagination of the world propelling her to superstardom at an early age becoming one of the most awarded performers of our time. This is a look into the amazing heights she achieved and her personal struggles with substance abuse and a tumultuous marriage.</p>"
+        }
+    },
+    "events": [
+      {
+        "media": {
+          "url": "{{ static_url }}/img/examples/houston/family.jpg",
+          "caption": "Houston's mother and Gospel singer, Cissy Houston (left) and cousin Dionne Warwick.",
+          "credit": "Cissy Houston photo:<a href='http://www.flickr.com/photos/11447043@N00/418180903/'>Tom Marcello</a><br/><a href='http://commons.wikimedia.org/wiki/File%3ADionne_Warwick_television_special_1969.JPG'>Dionne Warwick: CBS Television via Wikimedia Commons</a>"
+        },
+        "start_date": {
+          "month": "8",
+          "day": "9",
+          "year": "1963"
+        },
+        "text": {
+          "headline": "A Musical Heritage",
+          "text": "<p>Born in New Jersey on August 9th, 1963, Houston grew up surrounded by the music business. Her mother is gospel singer Cissy Houston and her cousins are Dee Dee and Dionne Warwick.</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/fSrO91XO1Ck",
+          "caption": "",
+          "credit": "<a href=\"http://unidiscmusic.com\">Unidisc Music</a>"
+        },
+        "start_date": {
+          "year": "1978"
+        },
+        "text": {
+          "headline": "First Recording",
+          "text": "At the age of 15 Houston was featured on Michael Zager's song, Life's a Party."
+        }
+      }
+    ]
+}
+
 
 window.timeline = new TL.Timeline('timeline-embed', timeline_json);
         </script>
