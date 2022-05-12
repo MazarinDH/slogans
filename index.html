@@ -217,6 +217,9 @@
             // which creates the appropriate JSON configuration
             //var timeline_json = make_the_json(); 
             
+	var options = {
+   	 language : "fr",
+  	}
             // load the json file
 
  	fetch('./all_events.json')
@@ -224,7 +227,7 @@
     	return response.json();
   	})
   	.then(function (data) {
-  	  window.timeline = new TL.Timeline('timeline-embed', data);
+  	  window.timeline = new TL.Timeline('timeline-embed', data,);
  	 })
  	 .catch(function (err) {
   	  console.log(err);
