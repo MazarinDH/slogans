@@ -227,23 +227,35 @@
 	    
 		
 // 	  // TRY WITH DIRECT JSON 
-const timeline_json =  {'title': {'media': {'url': 'a title url',
-   'caption': 'a title caption test ',
-   'credit': 'a title credit'},
-  'text': {'headline': 'Lausanne',
-   'text': '<p>smth to say about the project</p>'}},
- 'events': [{'media': {'url': 'gifs/2008-09-19.gif',
-    'caption': "Cérémonie officielle. Discours et spectacles à l'occasion de l’inauguration du métro M2, premier métro automatique de Suisse. Entre douze et quinze mille passagers. Discours de Mortiz Leuenberger, Conseiller fédéral, interrompu par des manifestants.",
-    'credit': 'https://www.dartfish.tv/Player?CR=p33203c27287m802509'},
-   'start date': {'month': '09', 'day': '19', 'year': '2008'},
-   'text': {'headline': 'Inauguration du métro M2',
-    'text': '"ça coince à la gare"\'\n"... ton salaire"\'\n'}},
-  {'media': {'url': 'gifs/2000-09-25.gif',
-    'caption': 'None',
-    'credit': 'https://www.dartfish.tv/Player?CR=p33203c27287m1180986'},
-   'start date': {'month': '09', 'day': '25', 'year': '2000'},
-   'text': {'headline': 'None',
-    'text': '"Petite Mère, tes enfants ont faim"\'\n"Pour une culture de patates"\'\n"Pour une culture alternative"\'\n'}}]}
+const timeline_json =  { "title":
+  { "media":
+     { "url": "",
+       "caption": "SLOGANS from the past",
+     "credit":"no credit/<a href=''>tm_10001</a>"
+     },
+     "text": { "headline": "Lausanne<br/>DATES", 
+"text": "<p>smth to say about the project</p>"
+}
+ },
+
+ "events": [ {
+"media": { "url": "{{ static_url }}/img/examples/houston/family.jpg", "caption":
+"Slogans screenshot", "credit": "credit<a
+href='http://www.flickr.com/photos/11447043@N00/418180903/'>Tom
+Marcello</a><br/><a
+href='https://www.dartfish.tv/Player?CR=p33203c27287m1190999'>DARTFISH</a>" },
+"start_date": { "month": "02", "day": "06", "year": "2008" }, "text": {
+"headline": "Slogans", "text": "<p>DECFO SYSREM UN SYSTEM DE DEFAUT,Le conseil
+d'état Berne Roule Oublie Utilise Lessive Ignore les Salariés,Etre saigné pour
+enseigner,Gymnase d'Yverdon en (G)rève,Etat endetté Fonctionnaires Ponctionnés
+Etat regonflé Fonctionnaires oubliés,Pascal tu es un chacal,Aclens se
+défend,Romanel se rebelle,Oubliés hier, perdants demain!</p>" } }, { "media": {
+"url": "https://youtu.be/fSrO91XO1Ck", "caption": "", "credit": "<a
+href=\"http://unidiscmusic.com\">Unidisc Music</a>" }, "start_date": { "year":
+"1978" }, "text": { "headline": "First Recording", "text": "At the age of 15
+Houston was featured on Michael Zager's song, Life's a Party." } } ]
+}
+
 window.timeline = new TL.Timeline('timeline-embed', timeline_json);
         </script>
 
