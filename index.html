@@ -227,7 +227,7 @@
     	return response.json();
   	})
   	.then(function (data) {
-  	  window.timeline = new TL.Timeline('timeline-embed', data,);
+  	  window.timeline = new TL.Timeline('timeline-embed', data,options);
  	 })
  	 .catch(function (err) {
   	  console.log(err);
