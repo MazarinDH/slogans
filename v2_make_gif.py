@@ -19,7 +19,7 @@ def Reformat_Image(ImageFilePath):
 
         background.paste(image, offset)
         final = background.resize((800,800))
-        final.save(ImageFilePath,format='JPEG', subsampling=0, quality=100)
+        final.save(ImageFilePath,format='PNG', subsampling=0, quality=100)
         print("Image has been is squared and resized !")
     else:
         print("Image is already a square, it has not been resized !")
