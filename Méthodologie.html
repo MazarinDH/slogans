@@ -1,17 +1,140 @@
-Données primaires, i.e. sources (vidéos)
-Collection des données primaires
-Notre travail se concentre sur les sources audiovisuelles. Notre source primaire de données vient de la plateforme Dartfish.tv (cite), plus précisement la chaîne publique de "Lausanne web TV" qui contient 10'113 vidéos provenant du Fonds patrimoniaux audiovisuels conservés par la Ville de Lausanne. (citer).
-Traitement des données primaires
-- Nettoyage
-- Metadonnées
-  - Titre de séquences
-  - Description de séquences
-- Mots clés
-Présentation des données primaires
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="La Ceinture Pichard">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Ceinture Pichard</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Ceinture-Pichard.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.7.1, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+      <link href="nouislider.css" rel="stylesheet">
+      <script src="nouislider.js"></script>
+
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!--  leaflet-->
+      <link rel="stylesheet" href="map.css" />
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+            integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+            crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+              integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+              crossorigin=""></script>
+      <!--  <link rel="stylesheet" href="https://unpkg.com/leaflet-search@2.3.7/dist/leaflet-search.src.css" />-->
+
+
+
+      <!--  MarkerCluster-->
+      <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+      <link rel="stylesheet" href="dist/MarkerCluster.css" />
+      <link rel="stylesheet" href="dist/MarkerCluster.Default.css" />
+      <script src="dist/leaflet.markercluster-src.js"></script>
+      <script src="node_modules/leaflet-search/dist/leaflet-search.src.js"></script>
+      <link rel="stylesheet" href="node_modules/leaflet-search/dist/leaflet-search.src.css  " />
+
+      <!--  Database-->
+      <script src="dataPichard.js"></script>
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/ltm.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Ceinture Pichard">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode"><header class="u-clearfix u-header u-white u-header" id="sec-8b43"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="index.html" data-page-id="200825488" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500" title="EPFL x LTM">
+          <img src="images/ltm.png" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="index.html" style="padding: 10px 20px;">EPFL x LTM</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Ceinture-Pichard.html" style="padding: 10px 20px;">Ceinture Pichard</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Notre-equipe.html" style="padding: 10px 20px;">Notre équipe</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.html">EPFL x LTM</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Ceinture-Pichard.html">Ceinture Pichard</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Notre-equipe.html">Notre équipe</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header>
+    <section class="u-align-left u-clearfix u-section-1" id="sec-a814">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="fr-view u-clearfix u-rich-text u-text u-text-1">
+          <h1 style="text-align: left;">Méthodologie</h1>
+          <p style="text-align: justify">
+				Données primaires, i.e. sources (vidéos)
+				Collection des données primaires
+				Notre travail se concentre sur les sources audiovisuelles. Notre source primaire de données vient de la plateforme Dartfish.tv (cite), plus précisement la chaîne publique de "Lausanne web TV" qui contient 10'113 vidéos provenant du Fonds patrimoniaux audiovisuels conservés par la Ville de Lausanne. (citer).
+				Traitement des données primaires
+				- Nettoyage
+				- Metadonnées
+				  - Titre de séquences
+				  - Description de séquences
+				- Mots clés
+				Présentation des données primaires
 
 
 
 
 
-Données secondaires (Impresso)
-Une collection d'archives de journaux a été téléchargée du Projet Impresso (citer). Les articles on étés préselectionnés avec les filtres suivants; chaque article est en français, dans le journal de la Gazette de lausanne et localisé à Lausanne. La collection totale couvre les années (remplir) à (remplir) et contient (remplir) articles. Notons que cette préselection était nécessaire car l'accès à l'API du Projet Impresso est restreinte, de plus comme uniquement 10'000 articles peuvent être téléchargés en une fois, plusieurs manipulations ont été nécessaires.
+				Données secondaires (Impresso)
+				Une collection d'archives de journaux a été téléchargée du Projet Impresso (citer). Les articles on étés préselectionnés avec les filtres suivants; chaque article est en français, dans le journal de la Gazette de lausanne et localisé à Lausanne. La collection totale couvre les années (remplir) à (remplir) et contient (remplir) articles. Notons que cette préselection était nécessaire car l'accès à l'API du Projet Impresso est restreinte, de plus comme uniquement 10'000 articles peuvent être téléchargés en une fois, plusieurs manipulations ont été nécessaires.
+
+
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+    
+    <footer class="u-align-center u-clearfix u-footer u-white-80 u-footer" id="sec-85f5"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+<!--        <p class="u-small-text u-text u-text-variant u-text-1"> Website made with love in Switzerland</p>-->
+      </div></footer>
+<!--    <section class="u-backlink u-clearfix u-grey-80">-->
+<!--      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">-->
+<!--        <span>Website Templates</span>-->
+<!--      </a>-->
+<!--      <p class="u-text">-->
+<!--        <span>created with</span>-->
+<!--      </p>-->
+<!--      <a class="u-link" href="" target="_blank">-->
+<!--        <span>Website Builder Software</span>-->
+<!--      </a>. -->
+<!--    </section>-->
+  </body>
+</html>
+
+<script src="mapPichard.js"></script>
