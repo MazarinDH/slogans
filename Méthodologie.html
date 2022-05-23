@@ -92,23 +92,57 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="fr-view u-clearfix u-rich-text u-text u-text-1">
           <h1 style="text-align: left;">Méthodologie</h1>
-          <p style="text-align: justify">
-				Données primaires, i.e. sources (vidéos)
-				Collection des données primaires
-				Notre travail se concentre sur les sources audiovisuelles. Notre source primaire de données vient de la plateforme Dartfish.tv (cite), plus précisement la chaîne publique de "Lausanne web TV" qui contient 10'113 vidéos provenant du Fonds patrimoniaux audiovisuels conservés par la Ville de Lausanne. (citer).
-				Traitement des données primaires
-				<ul>
-				<li>Nettoyage</li>
-				<li>Metadonnées</li>
-					<ul>
-				    <li>Titre de séquences</li>
-					<li>Description de séquences</li>
-				    </ul>
-				<li>Mots clés</li>
-				</ul>
-				Présentation des données primaires
+          <p> Données primaires, i.e. sources (vidéos)
+
+Collection des données primaires
+
+Notre travail se concentre sur les sources audiovisuelles. Notre source primaire de données vient de la plateforme Dartfish.tv (cite), plus précisément de la chaîne publique de "Lausanne web TV" qui contient 10 113 vidéos provenant du Fonds patrimoniaux audiovisuels conservés par la Ville de Lausanne. (citer). 
+Notre sélection inclut les vidéos qui contiennent dans leurs metadata (a preciser) au moins un des mots suivants: manif*, grève, revendication, conflit social, lôzane bouge. Avec ces mots-clés 295 vidéos ont été récupérées. 
+Il est important de souligner que la diminution drastique du nombre de vidéos après les mot-clés est due au sens large que peut prendre la mot “manifestation”, par exemple certaines vidéos font référence au mot manifestation dans le cadre de manifestation sportives. Les autres mots-clés ont été rajoutés afin de correspondre à des événements historiques dont nous avions connaissances et qui pourrait échapper à la sélection. Le mouvement historique de la Gréve des femmes (aujourd hui connu sous le nom de Grève féministe) bien que souvent lié à des manifestations est désigné autrement que par manifestation. 
+Nous sommes conscient.e.s que le choix de mots-clés définit quels événements sont présents ou pas, lors de la discussion de la présence des mouvements historiques dans les sources audiovisuelles nous reviendrons sur cette sélection est son impact (David).
 
 
+Traitement des données primaires
+
+Slogans
+Le but du projet étant d étudier les mouvements contestataires (a preciser) à travers les slogans des manifestations, un traitement manuel des données a été effectué pour conserver uniquement les vidéos contenant des images de banderoles, panneaux ou autres supports avec des slogans. Finalement, c est une collection de 90 vidéos avec 279 slogans qui forme le jeu de données primaires. Ce jeu couvre les années 1968 à 2013. Les émissions sont 
+(si temps ajouter une distribution des vidéos)
+Les slogans des vidéos du jeu de données on été manuellement extrait et ajouté au metadonnées de chaque vidéo. La typographie ainsi que la disposition des slogans sur les banderoles rend leur lecture ainsi que leur retranscription manuel approximative. Nous avons décidé pour plus de lisibilité de retranscrire les slogans comme des phrases, c est-à-dire avec une majuscule puis des minuscules (et d autres trucs à dire?). Toutefois, afin de rendre leur matérialité visible dans le produit final, les images des slogans on toutes été manuellement extraite des vidéos et insérés sous la forme d image animée (GIF) dans la ligne du temps interactive. 
+
+
+Nettoyage
+Les vidéos sont accompagnées de 25 métadonnées différentes (voir note), dans le cadre de ce projet ce sont 6 catégories qui nous sont utiles, elles sont décrites ci-dessous.
+
+label : titre de l’émission, chaine TV et date
+description : description de la vidéo
+ date : date au format YYYY.MM.DD
+ sequences : dictionnaire avec les differents sujets de la video, leur description, les intervenants, l’organisations, timecode et durée.
+ url : lien de la video 
+ slogan : liste des slogans 
+
+Les jeu de données est trié afin de conserver les vidéos qui ont une date et une liste de séquences (dictionnaire avec les sujets) valides, 79 en tout. 
+
+( 'label', 'description', 'audio', 'cote', 'date', 'droits','serie', 'periode', 'genre_de_production', 'fonds_darchives','format_du_master', 'format_du_transfert', 'realisation', 'duree','sequences', 'animateur_de_lemission', 'duree_du_master', 'versement','collection_apres_correction', 'manif_onehot', 'greve_onehot', 'revendic_onehot', 'url', 'slogan')
+
+Titre et description de séquences
+Le titre et la description de la séquence sont nécessaires pour contextualiser les vidéos et les photos des slogans sur la ligne temporelle. Ces informations sont extraites de la liste de séquences à l’aide des mots-clés initiaux. Une fois la bonne sequince identifiée le label qui sert de titre et la description sont ajoutées au jeu de données.
+
+Formattage pour la visualisation web
+Les données ainsi traitées nécessite un formatage particulier afin d’être intégrées au module Javascript [4] de la ligne temporelle. Un set de données au format JSON est crée avec pour chaque vidéo un événements correspondant.
+Le titre de l’évenement correspond au titre de la séquence de la vidéo et la liste des slogans l’accompagne comme texte. La date de l’émission est utilisée comme date pour positionner l’événement sur la ligne du temps. Une courte animation avec les images des slogans est produite pour chaque événement, ce GIF est accompagné d’un lien vers la vidéo source ainsi que de la description extraite de la séquence.
+(si temps ajouter image descriptive)
+
+Présentation des données primaires
+
+Le module Timeline JS [3] permet une visualisation interactive des données temporelles et de leur metadonnées. Un zoom interactif permet de visualiser plus précisément un interval de temps.
+
+
+Données secondaires, complémentaires (articles de journaux)
+
+Mots clés
+
+[3] https://timeline.knightlab.com/docs/index.html 
+[4] https://timeline.knightlab.com/docs/json-format.html 
 
 
 
