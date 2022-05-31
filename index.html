@@ -191,5 +191,14 @@
  	 .catch(function (err) {
   	  console.log(err);
  	 });
+
 	      </script>
+       <script>
+	<!--- adjust the timeline modifying the DOM ---> 
+	 selection = document.querySelectorAll(".tl-credit");
+	 selection.forEach(element => {
+ 		element.style.width="500px";
+	    });
+	 console.log(selection)
+	</script>
 
