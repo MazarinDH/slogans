@@ -157,10 +157,8 @@ figure img {
     vertical-align: top;
 }
 figure figcaption {
-    border: 1px dotted blue;
+    border: 0;
     text-align: center;
 }
 
-figure img {
-  border: 0;
-}
+
