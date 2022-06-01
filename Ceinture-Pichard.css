@@ -160,3 +160,7 @@ figure figcaption {
     border: 1px dotted blue;
     text-align: center;
 }
+
+figure img {
+  border: 0;
+}
