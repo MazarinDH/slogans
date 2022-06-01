@@ -150,7 +150,7 @@
 
 figure {
     display: inline-block;
-    border: 1px dotted gray;
+    border: 0;
     margin: 20px; /* adjust as needed */
 }
 figure img {
