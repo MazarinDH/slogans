@@ -129,13 +129,13 @@ Les jeu de données est trié afin de conserver les vidéos qui ont une date et 
 Le titre et la description de la séquence sont nécessaires pour contextualiser les vidéos et les photos des slogans sur la ligne temporelle. Ces informations sont extraites de la liste de séquences à l’aide des mots-clés initiaux. Une fois la bonne sequence identifiée, le label qui sert de titre et la description sont ajoutées au jeu de données.
 
 <li>Formattage pour la visualisation web</li>
-Les données ainsi traitées nécessitent un formatage particulier afin d’être intégrées au module Javascript [4] de la ligne temporelle. Un set de données au format JSON est crée avec pour chaque vidéo un événements correspondant.
+Les données ainsi traitées nécessitent un formatage particulier afin d’être intégrées au module Javascript [1] de la ligne temporelle. Un set de données au format JSON est crée avec pour chaque vidéo un événements correspondant.
 Le titre de l’évenement correspond au titre de la séquence de la vidéo et la liste des slogans l’accompagne comme texte. La date de l’émission est utilisée comme date pour positionner l’événement sur la ligne du temps. Une courte animation avec les images des slogans est produite pour chaque événement, ce GIF est accompagné d’un lien vers la vidéo source ainsi que de la description extraite de la séquence.
 (si temps ajouter image descriptive)
 
 <h2>Présentation des données primaires</h2>
 
-Le module Timeline JS [3] permet une visualisation interactive des données temporelles et de leur metadonnées. Un zoom interactif permet de visualiser plus précisément un interval de temps.
+Le module Timeline JS [2] permet une visualisation interactive des données temporelles et de leur metadonnées. Un zoom interactif permet de visualiser plus précisément un interval de temps.
 
 
 	<h1>Données secondaires, complémentaires (articles de journaux)</h1>
@@ -144,16 +144,28 @@ Le module Timeline JS [3] permet une visualisation interactive des données temp
 	
 	<h1> Analyse </h1> 
 	
-	<img src="images/annee_distribution.png" alt="">
+	Si l'on regarde de près la distribution par année des slogans recueillis, représentée sur la figure 1, on constate que celle-ci n'est pas uniforme. Plus préoccupant même, de nombreux trous (c'est-à-dire des années sans slogans) sont à singaler. La principale cause de cela est qu'à ce jour, la principale source, présente en libre accès dans les archives de la ville de Lausanne, sont les journaux de l'ancienne chaîne régionale TVRL, qui a émis entre 1993 et 2009 [3]. Nous avions donc à disposition une couverture relativement complète de cette période, contrairement aux événements antiérieurs qui ont été couverts par d'autres médias (comme le Cinéac par exemple), mais ces médias se trouvent de manière beaucoup plus lacunaire sur le site Dartfish. Pour ce qui est antérieur à 1993, seuls les plus gros événements sont disponibles, tels les remous de mai 68, arrivés dans les année 1970 à Lausanne [4]. 
 	<br>
-	<img src="images/lemmes_distribution_colors.png" alt="">
+	<figure>
+	<img src="images/annee_distribution.png" alt="Figure 1 : Distribution par année du nombre de slogans identifiés">	
+	<figcaption>Figure 1 : Distribution par année du nombre de slogans identifiés</figcaption>
+	</figure>
+	<br>
+	Suite à l'identification des slogans, une analyse des occurrences de ceux-ci, regroupés par lexème, a été effectuée, représentée à la figure 2. Premier constat interpellant, les lexèmes <i>non</i> et <i>pour</i> arrivent respectivement en 2e et 3e position. Il semblerait donc que la société civile se déplace dans la rue majoritairement pour s'opposer à des projets (loi, fermeture d'espace,...) mais également pour réclamer certaines améliorations (droits pour certains groupes, meilleures conditions de travail,...). Cette analyse permet également de mettre en avant les thèmes de ces manifestations comme le <i>salaire</i> ou le <i>logement</i>, ainsi que certains groupes récurrents comme les <i>fonctionnaires</i>. Il apparaît également que le <i>Conseil d'état</i> est régulièrement inerpelé par les manifestants au sein de leurs slogans.
+	<br>
+	</figure>
+	<img src="images/lemmes_distribution_colors.png" alt="Figure 2 : Principaux lexèmes extraits de tous les slogans identifiés">
+	<figcaption>Figure 2 : Principaux lexèmes extraits de tous les slogans identifiéés</figcaption>
+	</figure>
 	<br>
 	
-	<h1> References </h1>
+	<h2> References </h2>
+[1] <a href="https://timeline.knightlab.com/docs/json-format.html",target="_blank">knight lab, TimelineJS JSON data format.</a> <br>
+[2] <a href="https://timeline.knightlab.com/docs/index.html",target="_blank">knight lab, Using TimelineJS.</a> <br>
+[3] <a href="https://wp.unil.ch/allezsavoir/ceux-qui-ont-fait-mai-68-se-sont-construit-en-eux-memes-toute-une-mythologie/",target="_blank">Allez savoir, 10.05.2008, <i>«Ceux qui ont fait Mai 68 se sont construit en eux-mêmes toute une mythologie»</i> </a> <br>
+[4] <a href="https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_de_la_r%C3%A9gion_lausannoise",target="_blank">Wikipedia, TVRL (consulté le 31 mai 2022)</a>
 
-[3] https://timeline.knightlab.com/docs/index.html <br>
-[4] https://timeline.knightlab.com/docs/json-format.html 
-
+CECI EST UN TEST
 
 
 				

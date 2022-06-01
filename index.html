@@ -125,6 +125,9 @@
         <h3 class="u-text u-text-1">Archives audiovisuelles de la région lausannoise&nbsp;</h3>
         <p class="u-text u-text-2"><b>
             <span style="font-weight: 400;">La ligne temporelle autour de laquelle s'organise le présent site est le résultat d'une année de recherche sur des archives audiovisuelles contenant des images de manifestations ayant eu lieu dans la région lausannoise entre 1968 et 2014. <br><br> Cette recherche a commencé dans les archives du CINEAC (1938-1969) avant d'inclure celle de la Télévision de la Région Lausannoise (TVRL), de TV Bourdo-net, de la TSR ainsi que des archives militantes issus des mouvements du Comité Action Cinéma (CAC) et de Lôzane Bouge. <br><br> L'objectif de cette frise chronologique est de rassembler les archives éparses des médias audiovisuels lausannois afin de montrer l'évolution des sujets de revendications de la population lausannoise ainsi que de permettre d'exposer l'absence de contenus audiovisuels concernant certains événements.</span></b>
+            <span style="font-weight: 400;"> 
+		<br> Les images des vidéos contenant des banderoles, ou autre support avec des slogans sont animées et presentées avec leur description ainsi qu'un lien vers la vidéo complète.
+		Pour détailler une période contenant beaucoup d'événements utiliser les icones de zoom. Les flèches de navigation permettent de voir l'événement précédent ou suivant. </span></b>
         </p>
     </div>
 </section> 
@@ -191,5 +194,15 @@
  	 .catch(function (err) {
   	  console.log(err);
  	 });
+
 	      </script>
+       <script>
+	<!--- adjust the timeline modifying the DOM ---> 
+	 selection = document.querySelectorAll(".tl-credit");
+	 console.log(selection)
+	 selection.forEach(element => {
+ 		element.style.width="500px";
+	    });
+	 
+	</script>
 
